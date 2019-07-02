@@ -1,0 +1,47 @@
+#include<conio.h>
+#include<stdio.h>
+#include<graphics.h>
+void main()
+{
+	int gm,gd;
+	int num=4;
+	int polypoints[8]={245,80,250,70,255,80,245,80};
+	int tri[8]={50,200,75,175,100,200,50,200};
+	detectgraph(&gm,&gd);
+	initgraph(&gm,&gd,"C:\\TC\\BGI");
+	line(50,50,100,50);
+	moveto(100,50);
+	lineto(100,30);
+	lineto(150,69);
+	lineto(100,100);
+	lineto(100,80);
+	lineto(50,80);
+	lineto(50,50);
+	circle(250,75,30);
+	circle(235,65,3);
+	circle(265,65,3);
+	drawpoly(num,polypoints);
+	arc(250,85,180,360,7);
+	drawpoly(num,tri);
+	moveto(75,175);
+	lineto(150,175);
+	lineto(175,200);
+	lineto(50,200);
+	lineto(50,250);
+	lineto(175,250);
+	lineto(175,200);
+	moveto(100,200);
+	lineto(100,250);
+	moveto(65,250);
+	lineto(65,225);
+	lineto(85,225);
+	lineto(85,250);
+	moveto(125,200);
+	lineto(125,225);
+	lineto(150,225);
+	lineto(150,200);
+
+
+
+	getch();
+}
