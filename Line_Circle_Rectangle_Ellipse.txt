@@ -1,0 +1,58 @@
+#include<graphics.h>
+#include<conio.h>
+#include<stdio.h>
+void main()
+{
+	int gm,gd;
+	detectgraph(&gm,&gd);
+	initgraph(&gm,&gd,"C:\\TC\\BGI");
+	line(50,50,100,100);
+	outtextxy(60,110,"LINE");
+	circle(150,75,20);
+	outtextxy(130,110,"CIRCLE");
+	rectangle(200,50,400,100);
+	outtextxy(260,110,"RECTANGLE");
+	ellipse(450,75,0,360,30,60);
+	outtextxy(425,150,"ELLIPSE");
+
+	getch();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
